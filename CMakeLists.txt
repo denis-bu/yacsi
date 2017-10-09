@@ -10,7 +10,7 @@ set(Boost_USE_STATIC_RUNTIME OFF)
 find_package(Boost 1.60.0 REQUIRED COMPONENTS program_options regex thread) 
 
 # Download and unpack googletest at configure time
-#configure_file(CMakeLists.txt.gtest googletest-download/CMakeLists.txt)
+configure_file(CMakeLists.txt.gtest googletest-download/CMakeLists.txt)
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
   RESULT_VARIABLE result
   WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/googletest-download )
